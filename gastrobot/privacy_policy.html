@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — GastroBot</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --text: #1a1a1a;
+        --muted: #555;
+        --border: #ddd;
+        --bg: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #f0f0f0;
+          --muted: #aaa;
+          --border: #444;
+          --bg: #121212;
+        }
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          Ubuntu,
+          sans-serif;
+        line-height: 1.55;
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem 3rem;
+        color: var(--text);
+        background: var(--bg);
+      }
+      h1 {
+        font-size: 1.65rem;
+        margin-top: 0;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin-top: 2rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.35rem;
+      }
+      p,
+      li {
+        color: var(--text);
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      .legal {
+        margin-top: 2.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      a {
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy</h1>
+    <p class="muted">
+      <strong>GastroBot</strong> — crew application for restaurant operations<br />
+      Last updated: <time datetime="2025-03-24">24 March 2025</time>
+    </p>
+
+    <p>
+      This policy describes how personal and operational data are handled when
+      you use the
+      <strong>GastroBot</strong> mobile and desktop application (the “App”). The
+      App is intended for authorized staff of venues that use the associated
+      restaurant operations platform.
+    </p>
+
+    <h2>1. Data controller</h2>
+    <p>
+      The services connected to the App are operated in connection with
+      <strong>BRRM</strong> (services hosted under domains such as
+      <strong>apirestobot.brrm.eu</strong> for production use). The legal entity
+      responsible for personal data (the “controller”) is the organization that
+      operates your venue’s subscription and employs or authorizes you to use
+      the App. For privacy requests specific to your workplace account, contact
+      your venue administrator or use the contact details below.
+    </p>
+
+    <h2>2. What data the App processes</h2>
+    <ul>
+      <li>
+        <strong>Account and authentication.</strong> To sign in, you provide
+        credentials (e.g. email and password) which are sent to our servers for
+        verification. After login, the App may store an encrypted or encoded
+        session on your device (including access and refresh tokens and basic
+        profile information returned by the API) so you stay signed in until you
+        log out.
+      </li>
+      <li>
+        <strong>Remembered email.</strong> If you choose to remember your email
+        address on the sign-in screen, it is stored locally on your device to
+        pre-fill the form.
+      </li>
+      <li>
+        <strong>Operational data.</strong> While you use the App, it exchanges
+        data with our backend APIs for features such as tables, orders,
+        reservations, menus, kitchen/bar queues, and related venue workflows.
+        That data is tied to your account and venue context as required to
+        provide the service.
+      </li>
+      <li>
+        <strong>Device content (optional).</strong> If a feature uses your
+        device camera or photo library (for example to attach images), access
+        occurs only when you initiate that action and is subject to the
+        permissions you grant the App on your operating system.
+      </li>
+    </ul>
+
+    <h2>3. Where data is stored</h2>
+    <ul>
+      <li>
+        <strong>On your device:</strong> session and preferences (e.g. via
+        platform storage such as SharedPreferences on Android) for login state
+        and remembered email.
+      </li>
+      <li>
+        <strong>On our servers:</strong> account, venue, and operational records
+        processed through the API endpoints configured for the App (production
+        traffic typically uses <strong>https://apirestobot.brrm.eu</strong>;
+        non-production builds may use other designated hosts).
+      </li>
+    </ul>
+
+    <h2>4. Purpose and legal basis</h2>
+    <p>
+      We process this data to provide and secure the service, authenticate
+      users, operate venue workflows, and meet contractual obligations with the
+      venue. Where applicable, processing may be based on contract, legitimate
+      interests (e.g. fraud prevention, service improvement), or consent (e.g.
+      optional device permissions), in line with local law.
+    </p>
+
+    <h2>5. Sharing and processors</h2>
+    <p>
+      Data is shared with infrastructure and service providers only as needed to
+      host and operate the platform (e.g. hosting, networking), under
+      appropriate agreements. The App does not embed third-party advertising or
+      analytics SDKs as part of the standard open-source application package
+      described in this repository; your venue’s deployment or future updates
+      may change this—check release notes or your administrator.
+    </p>
+
+    <h2>6. Retention</h2>
+    <p>
+      Server-side retention follows the controller’s policies and legal
+      requirements. Local session data on your device is removed when you log
+      out or when you clear the App’s storage; uninstalling the App may remove
+      local data depending on your platform.
+    </p>
+
+    <h2>7. Security</h2>
+    <p>
+      We use industry-standard measures such as TLS for data in transit. You
+      should protect your device and credentials; do not share login details
+      with unauthorized persons.
+    </p>
+
+    <h2>8. Your rights</h2>
+    <p>
+      Depending on your location (including the EEA/UK), you may have rights to
+      access, rectify, erase, restrict, or object to certain processing, and to
+      lodge a complaint with a supervisory authority. To exercise rights
+      regarding personal data held by the controller, contact
+      <a href="mailto:privacy@brrm.eu">privacy@brrm.eu</a> or your venue’s data
+      protection contact
+      <em>(replace with the correct address for your organization)</em>.
+    </p>
+
+    <h2>9. Children</h2>
+    <p>
+      The App is not intended for children and is meant for professional use by
+      authorized restaurant staff.
+    </p>
+
+    <h2>10. Changes</h2>
+    <p>
+      We may update this policy from time to time. The “Last updated” date at
+      the top will change when we do. Material changes may be communicated
+      through the App, your venue, or the publication URL where this document is
+      hosted.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      Questions about this policy or the GastroBot App:<br />
+      <strong>Email:</strong>
+      <a href="mailto:privacy@brrm.eu">privacy@brrm.eu</a>
+      <span class="muted">(update to your official privacy inbox)</span>
+    </p>
+
+    <p class="legal">
+      This document is provided as a practical summary for app store listings
+      and users. It does not constitute legal advice. Have qualified counsel
+      review it for your jurisdiction, employment context, and actual data
+      practices before publication.
+    </p>
+  </body>
+</html>
