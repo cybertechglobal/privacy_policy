@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Source Licenses and Third-Party Notices</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --border: #d9e2ec;
+      --surface: #f8fafc;
+      --link: #0b5cad;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101418;
+        --text: #e6edf3;
+        --muted: #a8b3bf;
+        --border: #334155;
+        --surface: #161c24;
+        --link: #80bfff;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin: 36px 0 12px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 22px;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 18px;
+    }
+
+    p, ul {
+      margin: 8px 0 14px;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .notice {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Open Source Licenses and Third-Party Notices</h1>
+  <p class="meta">Last updated: 2026-05-07</p>
+
+  <p>
+    This page lists third-party notices for open source components and data distributed with this Android application.
+    It is provided for attribution and license compliance.
+  </p>
+
+  <div class="notice">
+    <strong>Scope note:</strong>
+    Ruby/Fastlane build tooling dependencies such as <code>highline</code>, <code>nkf</code>, and Ruby
+    <code>public_suffix</code> are not packaged into the distributed APK/AAB artifacts and are not included in this
+    user-facing app notice.
+  </div>
+
+  <h2>Distributed Components and Data</h2>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Component</th>
+      <th>Purpose</th>
+      <th>License</th>
+      <th>Notice</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>OkHttp</td>
+      <td>HTTP client and networking support</td>
+      <td>Apache License 2.0</td>
+      <td>OkHttp is developed by Square and contributors. See <a href="https://square.github.io/okhttp/">OkHttp project page</a>.</td>
+    </tr>
+    <tr>
+      <td>Public Suffix List data</td>
+      <td>Domain and cookie/public suffix handling used by OkHttp or related networking components</td>
+      <td>Mozilla Public License 2.0</td>
+      <td>See the Public Suffix List notice below.</td>
+    </tr>
+    <tr>
+      <td>Eclipse Jakarta Dependency Injection</td>
+      <td>Dependency injection API used transitively by distributed dependencies</td>
+      <td>Apache License 2.0</td>
+      <td>Packaged notice identifies Apache-2.0.</td>
+    </tr>
+    <tr>
+      <td>AndroidX libraries</td>
+      <td>Android application framework support libraries</td>
+      <td>Apache License 2.0</td>
+      <td>Packaged license files include AndroidX Apache-2.0 notices.</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h2>Public Suffix List Notice</h2>
+
+  <p>
+    This application includes public suffix data used for domain handling. The data may be packaged as
+    <code>okhttp3/internal/publicsuffix/publicsuffixes.gz</code> or <code>assets/PublicSuffixDatabase.list</code>,
+    depending on the application variant.
+  </p>
+
+  <div class="notice">
+    <p>
+      <strong>Public Suffix List</strong>
+    </p>
+    <p>
+      The public suffix data is compiled from The Public Suffix List:
+      <br>
+      <a href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a>
+    </p>
+    <p>
+      It is subject to the terms of the Mozilla Public License, v. 2.0:
+      <br>
+      <a href="https://mozilla.org/MPL/2.0/">https://mozilla.org/MPL/2.0/</a>
+    </p>
+  </div>
+
+  <h2>Apache License 2.0 Notice</h2>
+
+  <p>
+    Several distributed components are licensed under the Apache License, Version 2.0, including OkHttp, AndroidX
+    libraries, and Eclipse Jakarta Dependency Injection notices found in the application artifact.
+  </p>
+
+  <p>
+    Apache License 2.0 text:
+    <br>
+    <a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a>
+  </p>
+
+  <h2>Eclipse Jakarta Dependency Injection Notice</h2>
+
+  <div class="notice">
+    <p>
+      This content is produced and maintained by the Eclipse Jakarta Dependency Injection project.
+    </p>
+    <p>
+      Project home:
+      <a href="https://projects.eclipse.org/projects/cdi.batch">https://projects.eclipse.org/projects/cdi.batch</a>
+    </p>
+    <p>
+      Jakarta Dependency Injection is a trademark of the Eclipse Foundation.
+    </p>
+    <p>
+      This program and the accompanying materials are made available under the terms of the Apache License,
+      Version 2.0.
+    </p>
+    <p>
+      SPDX-License-Identifier: Apache-2.0
+    </p>
+  </div>
+
+  <h2>Tooling Dependencies Not Distributed In The App</h2>
+
+  <p>
+    The following SBOM findings relate to build/release tooling and are not distributed in the APK/AAB artifacts:
+  </p>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Tooling component</th>
+      <th>Source</th>
+      <th>Compliance classification</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><code>highline 2.0.3</code></td>
+      <td>Ruby/Fastlane tooling via <code>Gemfile.lock</code></td>
+      <td>Not distributed in APK/AAB; excluded from user-facing app notices</td>
+    </tr>
+    <tr>
+      <td><code>nkf 0.2.0</code></td>
+      <td>Ruby/Fastlane tooling via <code>Gemfile.lock</code></td>
+      <td>Not distributed in APK/AAB; excluded from user-facing app notices</td>
+    </tr>
+    <tr>
+      <td><code>public_suffix 6.0.1</code></td>
+      <td>Ruby/Fastlane tooling via <code>Gemfile.lock</code></td>
+      <td>Not distributed in APK/AAB; excluded from user-facing app notices</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <p class="meta">
+    For additional source code or license questions, contact the application publisher.
+  </p>
+</main>
+</body>
+</html>
